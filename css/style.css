@@ -1,0 +1,87 @@
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic|Montserrat:700,400);
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  -webkit-font-smoothing: antialiased; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 200dpi), only screen and (min-resolution: 1.25dppx) {
+  -webkit-font-smoothing: subpixel-antialiased; }
+body {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.6em;
+  color: #111; }
+
+a {
+  color: #0099cc;
+  text-decoration: none; }
+  a:hover {
+    color: #66cccc; }
+
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.logo {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 175px;
+  margin-bottom: 35px; }
+
+h1 {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 2.4em;
+  letter-spacing: 1px;
+  margin: 0 0 12px; }
+
+p {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 1.6em;
+  margin-bottom: 30px; }
+  p:last-child {
+    margin-right: 0; }
+
+ul {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  float: left;
+  list-style: none;
+  margin: 0 0 15px;
+  padding: 0; }
+  ul:last-child {
+    margin-right: 0; }
+  ul li {
+    display: inline-block;
+    margin: 0 20px 0 0; }
+  ul .title {
+    font-weight: 700;
+    width: 80px; }
+
+/*# sourceMappingURL=style.css.map */
