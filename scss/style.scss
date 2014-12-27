@@ -35,6 +35,7 @@ a {
 
 .container {
   @include outer-container;
+  padding: 0 16px;
 }
 
 .logo {
@@ -51,8 +52,9 @@ a {
 h1 {
   font-family: $body-copy;
   font-size: 2.4em;
+  line-height: 1.4;
   letter-spacing: 1px;
-  margin: 0 0 12px;
+  margin: 0;
 }
 
 p {
@@ -79,5 +81,34 @@ ul {
   .title {
     font-weight: 700;
     width: 80px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    margin-top: 35px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  p {
+    @include span-columns(12);
+    font-family: $body-copy;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    li {
+      display: block;
+      margin: 0 0 10px 0;
+    }
   }
 }
