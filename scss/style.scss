@@ -3,6 +3,7 @@
 
 $head-type: 'Montserrat', $helvetica;
 $body-copy: 'Roboto', $helvetica;
+$header-bg: yellow url(../img/bg.jpg) no-repeat center;
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -25,90 +26,87 @@ body {
 }
 
 a {
-  color: #0099cc;
+  color: #111;
   text-decoration: none;
 
   &:hover {
-    color: #66cccc;
+    color: blue;
   }
 }
+
 
 .container {
   @include outer-container;
   padding: 0 16px;
 }
 
+.blue-block {
+  margin-top: -20px;
+  z-index: -1;
+  position: absolute;
+  background: darken(yellow, 2%);
+  width: 500px;
+  height: 100px;
+}
+
 .logo {
-  font-family: $body-copy;
-  font-size: 1.2em;
-  font-weight: 700;
-  // text-transform: uppercase;
-  letter-spacing: 2px;
-
-  margin-top: 175px;
-  margin-bottom: 35px;
+  font-family: $head-type;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
-h1 {
-  font-family: $body-copy;
-  font-size: 2.4em;
-  line-height: 1.4;
-  letter-spacing: 1px;
-  margin: 0;
-}
+header {
 
-p {
-  @include span-columns(8);
-  font-family: $body-copy;
-  font-weight: 400;
-  font-size: 1.3em;
-  line-height: 1.6em;
-  margin-bottom: 30px;
-}
-
-ul {
-  @include span-columns(12);
-  float: left;
-  list-style: none;
-  margin: 0 0 15px;
-  padding: 0;
-
-  li {
-    display: inline-block;
-    margin: 0 20px 0 0;
+  .header-image {
+    width: 90%;
+    z-index: 1;
+    background: $header-bg;
+    background-size: cover;
+    height: 200px;
   }
 
-  .title {
-    font-weight: 700;
-    width: 80px;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .logo {
-    margin-top: 35px;
-  }
-
-  h1 {
-    font-size: 1.8em;
-    line-height: 1.2;
-    letter-spacing: 1px;
-    margin: 0;
+  .header-copy {
+    z-index: 3;
+    margin-top: -180px;
+    margin-left: 350px;
+    h1 {
+      float: right;
+      font-family: $head-type;
+      // font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
   }
 
-  p {
-    @include span-columns(12);
-    font-family: $body-copy;
-    font-weight: 400;
-    font-size: 1.2em;
-    line-height: 1.4em;
-    margin-bottom: 30px;
-  }
+  @include media(769px) {
+    z-index: 1;
+    float: left;
 
-  ul {
-    li {
-      display: block;
-      margin: 0 0 10px 0;
+    .header-image {
+      width: 85%;
+      z-index: 1;
+      background: $header-bg;
+      background-size: cover;
+      height: 400px;
+    }
+
+    .header-copy {
+      z-index: 2;
+      margin-top: -152px;
+      margin-left: 542px;
+      h1 {
+        float: right;
+        font-family: $head-type;
+        font-size: 120px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        line-height: 1;
+
+        &:hover {
+          color: blue;
+        }
+      }
     }
   }
 }

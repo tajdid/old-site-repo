@@ -14,30 +14,38 @@
   <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
+  <div class="blue-block">
+    &nbsp;
+  </div>
   <main class="container">
-    <header>
-      <h3 class="logo"><a href="https://twitter.com/tajdidr">@tajdidr</a></h3>
-
-      <h1>Student Web and Interaction Designer</h1>
-      <p>My name's Tajdid Rahman, but you can call me Taj. I'm currently in my final year of Interactive Media Design at the Belfast Met, Titanic Quarter.</p>
-    </header>
     
-    <ul>
-      <li class="title">Work</li>
-      <li><a href="http://tajdidrahman.co.uk" target="_blank">Portfolio</a></li>
-      <li><a href="https://dribbble.com/tajdid" target="_blank">Dribbble</a></li>
-      <li><a href="http://tajdid.deviantart.com" target="_blank">DeviantArt</a></li>
-      <li><a href="http://cargocollective.com/tajdid" target="_blank">Cargo Collective</a></li>
-    </ul>
+    <h3 class="logo"><a href="index.html">Tajdid Rahman</a></h3>
 
-    <ul>
-      <li class="title">Social</li>
-      <li><a href="https://twitter.com/tajdidr" target="_blank">Twitter</a></li>
-      <li><a href="http://last.fm/user/tajdid" target="_blank">Last.fm</a></li>
-      <li><a href="https://soundcloud.com/tajdid" target="_blank">Soundcloud</a></li>
-      <li><a href="http://youtube.com/user/kreativekonvict" target="_blank">YouTube</a></li>
-    </ul>
+    <header>
+      <div class="header-image">
+        
+      </div>
+      <div class="header-copy">
+      <a href="http://tajdidrahman.co.uk" target="_blank">
+        <h1 id="fit">
+          Graphic & Interaction Designer
+        </h1>
+      </a>
+      </div>
+    </header>
+
+    <section>
+      
+    </section>
   </main>
   <!-- /.container -->
+
+  <!-- vendor -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <!-- application -->
+  <script src="js/jquery.fittext.js"></script>
+  <script>
+  $("#fit").fitText(1.2, { minFontSize: '38px', maxFontSize: '72px' });
+  </script>
 </body>
 </html>

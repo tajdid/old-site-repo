@@ -1,0 +1,26 @@
+{
+  "name": "tajdid.me.uk",
+  "version": "1.0.0",
+  "description": "This is my personal page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tajdid/tajdid.github.io.git"
+  },
+  "author": "Tajdid Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tajdid/tajdid.github.io/issues"
+  },
+  "homepage": "https://tajdid.me.uk",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
