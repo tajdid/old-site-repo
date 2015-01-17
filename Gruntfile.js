@@ -19,6 +19,13 @@ module.exports = function(grunt) {
         },
       },
 
+      js: {
+        files: ['js/*.js'],
+        options: {
+          livereload: true,
+        },
+      },
+
       html: {
         files: ['*.html'],
         options: {

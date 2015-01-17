@@ -14,16 +14,27 @@
   <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-  <div class="blue-block">
-    &nbsp;
-  </div>
+
   <main class="container">
-    
-    <h3 class="logo"><a href="index.html">Tajdid Rahman</a></h3>
+    <div class="topbar">
+      <a href="#" class="linkto"></a>
+      <h3 class="logo"><a href="index.html">Tajdid Rahman</a></h3>
+    </div>
 
     <header>
       <div class="header-image">
-        
+        <section class="ext-links">
+          <ul class="links">
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">DeviantArt</a></li>
+            <li><a href="">Cargo Collective</a></li>
+            <!-- <li><a href="">About</a></li>
+            <li><a href="">Journal</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Contact</a></li> -->
+          </ul>
+        </section>
       </div>
       <div class="header-copy">
       <a href="http://tajdidrahman.co.uk" target="_blank">
@@ -34,16 +45,33 @@
       </div>
     </header>
 
-    <section>
-      
+    <section class="projects">
+      <div class="work">
+        <div class="caption">
+          <h3>Photo App</h3>
+        </div>
+        <img src="https://d13yacurqjgara.cloudfront.net/users/452844/screenshots/1785556/android_photo_app.jpg" alt="">
+      </div>
+      <div class="work">
+        <div class="caption">
+          <h3>Movie House</h3>
+        </div>
+        <img src="https://d13yacurqjgara.cloudfront.net/users/452844/screenshots/1596871/dribbble_shot.jpg" alt="">
+      </div>
+      <div class="work">
+        <div class="caption">
+          <h3>Series Trakr</h3>
+        </div>
+        <img src="https://d13yacurqjgara.cloudfront.net/users/452844/screenshots/1547672/1st_dribbble_shot.png" alt="">
+      </div>
     </section>
   </main>
   <!-- /.container -->
-
   <!-- vendor -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <!-- application -->
   <script src="js/jquery.fittext.js"></script>
+  <!-- application -->
+  <script src="js/main.js"></script>
   <script>
   $("#fit").fitText(1.2, { minFontSize: '38px', maxFontSize: '72px' });
   </script>
