@@ -1,3 +1,3 @@
-#REKT
+#PORTFOLIO
 
-<img src="http://i1.kym-cdn.com/photos/images/original/000/256/257/88b.gif" />
+My new portfolio is still a work in progress.
