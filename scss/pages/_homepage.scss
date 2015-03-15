@@ -25,7 +25,7 @@
 .portfolio {
   // margin-top: 40px;
   background: #eee;
-  padding: 60px 0 50px;
+  padding: 20px 0 5px;
   @include fill-parent;
   figure {
     @include span-columns(12);
@@ -40,6 +40,7 @@
 
   @include media($desktop) {
     @include clearfix();
+    padding: 60px 0 45px;
     figure {
       @include span-columns(4);
       position: relative;
