@@ -1,0 +1,56 @@
+.hero {
+  margin: 45px 0;
+  
+  p {
+    margin-top: 25px;
+    font-size: 1em;
+    line-height: 1.8;
+    color: #666;
+  }
+
+  @include media ($desktop) {
+    margin: 80px 0;
+
+    h1 {
+      font-size: 3.2em;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+
+.portfolio {
+  // margin-top: 40px;
+  background: #eee;
+  padding: 60px 0 50px;
+  @include fill-parent;
+  figure {
+    @include span-columns(12);
+    background: black;
+    position: relative;
+    margin-bottom: 20px;
+    img {
+      display: table-cell;
+      opacity: 1;
+    }
+  }
+
+  @include media($desktop) {
+    @include clearfix();
+    figure {
+      @include span-columns(4);
+      position: relative;
+      overflow: hidden;
+
+      img {
+        @include transition(opacity, .3s, ease-in-out);
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
