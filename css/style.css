@@ -342,6 +342,8 @@ h2 {
           color: #4099FF; }
         .main-nav li:hover .dribbble {
           color: #E84F89; }
+        .main-nav li:hover .deviantart {
+          color: #62AB77; }
         .main-nav li:hover .email {
           color: #2516c7; }
       .main-nav a {
@@ -405,13 +407,36 @@ footer {
   padding: 40px 0;
   font-size: 0.9em;
   text-align: center; }
+  footer #recentTrack {
+    display: none; }
   @media screen and (min-width: 60em) {
     footer {
       font-size: 1em;
-      text-align: left; } }
+      text-align: left; }
+      footer .copyright {
+        float: left; }
+      footer #recentTrack {
+        display: block;
+        float: right; }
+        footer #recentTrack .soundwave {
+          position: relative;
+          top: 3px;
+          float: left;
+          margin-right: 8px;
+          width: 14px;
+          height: 14px;
+          background-image: url("https://dl.dropboxusercontent.com/u/68882376/img/soundwave-black.gif"); }
+        footer #recentTrack .song-title {
+          display: inline-block; }
+        footer #recentTrack .song-artist {
+          display: inline; }
+          footer #recentTrack .song-artist:before {
+            content: " - "; } }
 
 .hero {
   margin: 45px 0; }
+  .hero h1 {
+    font-size: 1.5em; }
   .hero p {
     margin-top: 25px;
     font-size: 1em;
@@ -428,7 +453,7 @@ footer {
 
 .portfolio {
   background: #eee;
-  padding: 20px 0 5px;
+  padding: 60px 0 50px;
   width: 100%; }
   .portfolio figure {
     float: left;
@@ -444,34 +469,34 @@ footer {
       display: table-cell;
       opacity: 1; }
   @media screen and (min-width: 60em) {
-    .portfolio {
-      padding: 60px 0 45px; }
-      .portfolio:after {
-        content: "";
-        display: table;
-        clear: both; }
-      .portfolio figure {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%;
-        position: relative;
-        overflow: hidden; }
-        .portfolio figure:last-child {
-          margin-right: 0; }
-        .portfolio figure img {
-          -webkit-transition: opacity, 0.3s, ease-in-out;
-          -moz-transition: opacity, 0.3s, ease-in-out;
-          transition: opacity, 0.3s, ease-in-out; }
-          .portfolio figure img:hover {
-            opacity: 0.5; } }
+    .portfolio:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .portfolio figure {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      position: relative;
+      overflow: hidden; }
+      .portfolio figure:last-child {
+        margin-right: 0; }
+      .portfolio figure img {
+        -webkit-transition: opacity, 0.3s, ease-in-out;
+        -moz-transition: opacity, 0.3s, ease-in-out;
+        transition: opacity, 0.3s, ease-in-out; }
+        .portfolio figure img:hover {
+          opacity: 0.5; } }
 
 .work-page {
-  padding: 60px 0;
+  padding: 5% 0 0;
   background: #eee; }
 
 .info-header {
   margin: 28px 0px 32px; }
+  .info-header .work-title {
+    text-transform: uppercase; }
   .info-header .work-description {
     float: left;
     display: block;
@@ -494,7 +519,7 @@ footer {
 .details {
   margin: 42px 0 0; }
   .details p {
-    margin: 0 0 42px;
+    margin: 0 0 22px;
     line-height: 1.6; }
   @media screen and (min-width: 768px) {
     .details .services {
@@ -506,11 +531,11 @@ footer {
       .details .services:last-child {
         margin-right: 0; }
     .details .work-description {
-      float: right;
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 65.88078%; }
+      width: 65.88078%;
+      margin-left: 17.05961%; }
       .details .work-description:last-child {
         margin-right: 0; } }
 
@@ -534,13 +559,29 @@ footer {
   .meta span {
     font-weight: 700; }
 
+.support {
+  background: #eee;
+  padding: 5% 0; }
+  .support h1 {
+    margin-bottom: 16px; }
+  .support p {
+    margin-bottom: 16px; }
+  @media screen and (min-width: 60em) {
+    .support .thumbnail-web {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .support .thumbnail-web:last-child {
+        margin-right: 0; } }
+
 .go-back {
   border-top: 1px solid #eee;
   padding: 25px 0;
   color: #111111; }
   .go-back:hover {
     color: #111111;
-    background: #eee; }
+    background: #efefef; }
 
 .mobile-work {
   float: left;
@@ -563,8 +604,11 @@ footer {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  background: #eee;
-  padding: 1em; }
+  width: 100%; }
   .web-work:last-child {
     margin-right: 0; }
+  .web-work img {
+    display: table-cell; }
+
+#edm-republic {
+  background-color: #E6368D; }

@@ -1,5 +1,5 @@
 .work-page {
-  padding: 60px 0;
+  padding: 5% 0 0;
   background: #eee;
 }
 
@@ -7,7 +7,7 @@
   // border-bottom: 1px solid #eee;
   // border-top: 1px solid #eee;
   .work-title {
-    
+    text-transform: uppercase;
   }
 
   .work-description {
@@ -33,7 +33,7 @@
   margin: 42px 0 0;
 
   p {
-    margin: 0 0 42px;
+    margin: 0 0 22px;
     line-height: 1.6;
   }
 
@@ -43,8 +43,9 @@
       @include span-columns(4);
     }
     .work-description {
-      float: right;
+      // float: right;
       @include span-columns(8);
+      @include shift(2);
     }
   }
 }
@@ -73,6 +74,25 @@
   }
 }
 
+.support {
+  background: #eee;
+  padding: 5% 0;
+
+  h1 {
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  @include media($desktop) {
+    .thumbnail-web {
+      @include span-columns(4);
+    }
+  }
+}
+
 .go-back {
   border-top: 1px solid #eee;
   padding: 25px 0;
@@ -80,7 +100,7 @@
 
   &:hover {
     color: $hyperlink;
-    background: #eee;
+    background: #efefef;
   }
 }
 
@@ -96,6 +116,16 @@
 
 .web-work {
   @include span-columns(12);
-  background: #eee;
-  padding: 1em;
+
+  img {
+    display: table-cell;
+  }
+  // background: #eee;
+  // padding: 1em;
+}
+
+// BACKGROUND COLOURS
+
+#edm-republic {
+  background-color: #E6368D;
 }

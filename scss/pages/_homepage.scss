@@ -1,5 +1,9 @@
 .hero {
   margin: 45px 0;
+
+  h1 {
+    font-size: 1.5em;
+  }
   
   p {
     margin-top: 25px;
@@ -25,7 +29,7 @@
 .portfolio {
   // margin-top: 40px;
   background: #eee;
-  padding: 20px 0 5px;
+  padding: 60px 0 50px;
   @include fill-parent;
   figure {
     @include span-columns(12);
@@ -40,7 +44,6 @@
 
   @include media($desktop) {
     @include clearfix();
-    padding: 60px 0 45px;
     figure {
       @include span-columns(4);
       position: relative;
