@@ -111,6 +111,9 @@ img {
 .icon-github:before {
   content: "\e60a"; }
 
+.icon-linkedin:before {
+  content: "\e607"; }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (min-resolution: 200dpi), only screen and (min-resolution: 1.25dppx) {
   -webkit-font-smoothing: subpixel-antialiased; }
 @-webkit-keyframes boxy {
@@ -344,6 +347,8 @@ h2 {
           color: #E84F89; }
         .main-nav li:hover .deviantart {
           color: #62AB77; }
+        .main-nav li:hover .linkedin {
+          color: #2588BC; }
         .main-nav li:hover .email {
           color: #2516c7; }
       .main-nav a {
@@ -450,6 +455,12 @@ footer {
         line-height: 1.2; }
       .hero p {
         font-size: 1.2em; } }
+
+.soon {
+  color: #444;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 50px; }
 
 .portfolio {
   background: #eee;

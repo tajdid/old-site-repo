@@ -73,6 +73,10 @@ $serif: 'Slabo 27px', $georgia;
   content: "\e60a";
 }
 
+.icon-linkedin:before {
+  content: "\e607";
+}
+
 //FONT SMOOTHING
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.25),

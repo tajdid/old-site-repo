@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?4rk855');
-	src:url('fonts/icomoon.eot?#iefix4rk855') format('embedded-opentype'),
-		url('fonts/icomoon.woff?4rk855') format('woff'),
-		url('fonts/icomoon.ttf?4rk855') format('truetype'),
-		url('fonts/icomoon.svg?4rk855#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?-ah7g3i');
+	src:url('fonts/icomoon.eot?#iefix-ah7g3i') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?-ah7g3i') format('truetype'),
+		url('fonts/icomoon.woff?-ah7g3i') format('woff'),
+		url('fonts/icomoon.svg?-ah7g3i#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -26,44 +26,30 @@
 .icon-file:before {
 	content: "\e601";
 }
-
 .icon-envelope:before {
 	content: "\e602";
 }
-
 .icon-user:before {
 	content: "\e603";
 }
-
 .icon-menu:before {
 	content: "\e604";
 }
-
 .icon-link:before {
 	content: "\e605";
 }
-
 .icon-arrow-right:before {
 	content: "\e600";
 }
-
-.icon-instagram:before {
-	content: "\e607";
-}
-
 .icon-twitter:before {
 	content: "\e606";
 }
-
 .icon-dribbble:before {
 	content: "\e608";
 }
-
 .icon-deviantart:before {
 	content: "\e609";
 }
-
-.icon-github:before {
-	content: "\e60a";
+.icon-linkedin:before {
+	content: "\e607";
 }
-
