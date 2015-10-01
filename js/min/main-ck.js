@@ -1,1 +1,0 @@
-function recentTrack(e){var t=(new Array).concat(e.recenttracks.track)[0];document.getElementById("recentTrackArtist").innerHTML=t.artist["#text"],document.getElementById("recentTrackTitle").href=t.url,document.getElementById("recentTrackTitle").innerHTML=t.name}
