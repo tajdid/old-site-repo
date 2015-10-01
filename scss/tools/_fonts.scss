@@ -1,0 +1,88 @@
+@include web-fonts(("Oxygen": ("400", "400 italic", "600 italic", "700")));
+// @include web-fonts(("Slabo+27px": ("400")));
+
+$sans-serif: 'Oxygen', $helvetica;
+$serif: 'Slabo 27px', $georgia;
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?105nih');
+  src:url('../fonts/icomoon.eot?#iefix105nih') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?105nih') format('woff'),
+    url('../fonts/icomoon.ttf?105nih') format('truetype'),
+    url('../fonts/icomoon.svg?105nih#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  // Better Font Rendering ===========
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-file:before {
+  content: "\e601";
+}
+
+.icon-envelope:before {
+  content: "\e602";
+}
+
+.icon-user:before {
+  content: "\e603";
+}
+
+.icon-menu:before {
+  content: "\e604";
+}
+
+.icon-link:before {
+  content: "\e605";
+}
+
+.icon-arrow-right:before {
+  content: "\e600";
+}
+
+.icon-instagram:before {
+  content: "\e607";
+}
+
+.icon-twitter:before {
+  content: "\e606";
+}
+
+.icon-dribbble:before {
+  content: "\e608";
+}
+
+.icon-deviantart:before {
+  content: "\e609";
+}
+
+.icon-github:before {
+  content: "\e60a";
+}
+
+.icon-linkedin:before {
+  content: "\e607";
+}
+
+//FONT SMOOTHING
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi),
+only screen and ( min-resolution: 1.25dppx)
+{
+  -webkit-font-smoothing: subpixel-antialiased;
+}

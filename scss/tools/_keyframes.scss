@@ -1,0 +1,38 @@
+//KEYFRAMES
+@include keyframes(boxy) {
+  0%  {
+    transform:rotate(0deg);
+    /* transform:scale(0); */
+  }
+  25%  {
+    transform:rotate(45deg);
+    transform:scale(1.5);
+    color: blue;
+  }
+  50%  {
+    transform:rotate(90deg);
+  }
+  75%  { 
+    transform:rotate(135deg);
+    transform:scale(0.8);
+  }
+  100% {  
+    transform:rotate(180deg);
+    transform:scale(1);
+  }
+}
+
+@include keyframes(hover) {
+ 0% {
+   transform: translateY(0px);
+   // transform: skew(0deg,0deg);
+ }
+ 50% {
+   transform: translateY(-4px);
+   // transform: skew(180deg,180deg);
+ }
+ 100% {
+   transform: translateY(4px);
+   // transform: skew(180deg,180deg);
+ }
+}

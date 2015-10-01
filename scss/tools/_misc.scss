@@ -1,0 +1,32 @@
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  border: 0;
+}
+
+hr {
+  border-top: 1px solid #ddd;
+}
+
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

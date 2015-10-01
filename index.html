@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+
+  Whatchu lookin' at Willis?
+
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Tajdid Rahman | Personal Page</title>
+
+  <meta name="description" content="I'm a web and interaction designer based in Belfast, Northern Ireland. I specialise in designing clean and user-friendly websites and mobile experiences." />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#0000FF" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+  <!-- Inline styles are making a comeback -->
+  <style>
+    html{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*,*:before,*:after{-webkit-box-sizing:inherit;-moz-box-sizing:inherit;box-sizing:inherit}html{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}*,*:before,*:after{-webkit-box-sizing:inherit;-moz-box-sizing:inherit;box-sizing:inherit}body{margin:0;font-family:Georgia, serif;font-size:1em;line-height:1.6}h1,h2,h3,h4,p,blockquote,figure,ol,ul{margin:0;padding:0}li{display:block}h1,h2,h3,h4{font-size:inherit}a{text-decoration:none;color:inherit;border-bottom:1px solid black;padding-bottom:1px;-webkit-transition:.3s;transition:.3s}a:hover{color:blue;border-color:blue}img{max-width:100%;height:auto;border:0}h5{font-family:'Helvetica Neue', sans-serif;font-size:0.7em;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:18px}.container{margin:8vh;padding:16px;max-width:42em;width:100%}@media screen and (min-width: 60em){.container{float:left;display:block;margin-right:2.35765%;width:55.64502%}.container:last-child{margin-right:0}}
+    header{margin-bottom:20px}header h1{font-weight:400;font-size:1.6em;line-height:1.3}header .tag{font-family:'Helvetica Neue', sans-serif;font-size:0.7em;font-weight:700;text-transform:uppercase;letter-spacing:1px}@media screen and (min-width: 60em){header{margin-bottom:40px}header h1{font-weight:400;font-size:1.8em;line-height:1.3}header .tag{font-size:0.7em;font-weight:700;text-transform:uppercase;letter-spacing:2px}}
+    section p{font-size:1em;margin-bottom:16px}@media screen and (min-width: 60em){section .headline{font-size:1.4em}section p{font-size:1.2em;margin-bottom:28px}}
+    .links li{margin-bottom:10px}@media screen and (min-width: 60em){.links{position:absolute;bottom:8vh}.links li{display:inline;margin-right:20px}}
+    #recentTrack{display:none}@media screen and (min-width: 60em){#recentTrack{position:absolute;bottom:8vh;right:8vh;float:right;display:block}#recentTrack .soundwave{position:relative;top:3px;float:left;margin-right:8px;width:14px;height:14px;background-image:url("https://dl.dropboxusercontent.com/u/68882376/img/soundwave-black.gif")}#recentTrack .song-title{display:inline-block}#recentTrack .song-artist{display:inline}#recentTrack .song-artist:before{content:" by "}}
+  </style>
+  <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+</head>
+<body>
+
+  <main class="container" role="main">
+    <header>
+      <h1>Tajdid Rahman</h1>
+      
+      <span class="tag">Web & Interaction Designer</span>
+    </header>
+
+    <section>
+      <p>Hi there, I recently finished a Foundation Degree in Interactive Media and am now working towards a Bachelor of Design Honours degree in <a href="http://ixdbelfast.org" target="_blank">Interaction Design</a> at Ulster University.</p>
+
+      <p>Besides designing things to make people's life easier, I also enjoy taking random <a href="http://instagram.com/tajxrah/" target="_blank">photos</a> and listening to <a href="http://last.fm/user/tajdid" target="_blank">music</a>.</p>
+
+      <p>I'm currently unavailable for freelance work, but you can still contact me through <a href="https://twitter.com/tajdidr" target="_blank">Twitter</a> or <a href="mailto:hi@tajdid.me.uk?subject=Design%20Enquiry">email!</a></p>
+    </section>
+
+    <nav class="links" role="navigation">
+      <ul>
+        <li><a href="https://twitter.com/tajdidr" target="_blank">Twitter</a></li>
+        <li><a href="https://dribbble.com/tajdid" target="_blank">Dribbble</a></li>
+        <li><a href="https://github.com/tajdid" target="_blank">Github</a></li>
+        <li><a href="http://codepen.io/tajdid" target="_blank">Codepen</a></li>
+        <li><a href="mailto:hi@tajdid.me.uk?subject=Design%20Enquiry" target="_blank">Email</a></li>
+      </ul>
+    </nav>
+    
+  </main>
+
+  <div id="recentTrack">
+    <!-- <h5>Currently Listening</h5> -->
+    <div class="soundwave"></div>
+    <div class="song-title"><a id="recentTrackTitle" class="track" href="" target="_blank">Loading...</a></div>
+    <div id="recentTrackArtist" class="song-artist">Please Wait</div>
+  </div>
+
+  <!-- scriptz-r-us -->
+  <script src="js/min/main-ck.js"></script>
+  <script type="text/javascript" src="http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=tajdid&api_key=a7e9e2b23c11357fef487cd186ebdd50&limit=1&format=json&callback=recentTrack"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-37123804-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
